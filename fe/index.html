@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo 앱 - Express + Bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <!-- 헤더 -->
+          <div class="text-center mb-4">
+            <h1 class="display-4">
+              <i class="bi bi-check2-square"></i> Todo 앱
+            </h1>
+            <p class="text-muted">Express + Bootstrap으로 만든 간단한 Todo 서비스</p>
+          </div>
+
+          <!-- 에러 메시지 -->
+          <div id="errorAlert" class="alert alert-danger d-none" role="alert"></div>
+
+          <!-- Todo 추가 폼 -->
+          <div class="card mb-4">
+            <div class="card-body">
+              <form id="todoForm" class="d-flex gap-2">
+                <input
+                  type="text"
+                  id="todoInput"
+                  class="form-control"
+                  placeholder="새로운 할 일을 입력하세요..."
+                  required
+                />
+                <button type="submit" class="btn btn-primary">
+                  <i class="bi bi-plus-circle"></i> 추가
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- 로딩 표시 -->
+          <div id="loadingSpinner" class="text-center d-none">
+            <div class="spinner-border text-primary" role="status">
+              <span class="visually-hidden">로딩 중...</span>
+            </div>
+          </div>
+
+          <!-- Todo 목록 -->
+          <div id="todoList" class="card">
+            <div class="card-body">
+              <h5 class="card-title mb-3">할 일 목록</h5>
+              <div id="emptyState" class="text-center text-muted py-4 d-none">
+                할 일이 없습니다. 새로운 Todo를 추가해보세요!
+              </div>
+              <ul id="todosContainer" class="list-group list-group-flush"></ul>
+            </div>
+          </div>
+
+          <!-- 통계 -->
+          <div id="statsCard" class="card mt-4 d-none">
+            <div class="card-body">
+              <div class="row text-center">
+                <div class="col-4">
+                  <div class="fw-bold text-primary">전체</div>
+                  <div id="totalCount" class="h4">0</div>
+                </div>
+                <div class="col-4">
+                  <div class="fw-bold text-success">완료</div>
+                  <div id="completedCount" class="h4">0</div>
+                </div>
+                <div class="col-4">
+                  <div class="fw-bold text-warning">미완료</div>
+                  <div id="pendingCount" class="h4">0</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
+

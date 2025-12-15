@@ -1,0 +1,15 @@
+{
+  "name": "todo-frontend",
+  "version": "1.0.0",
+  "description": "Bootstrap으로 만든 Todo 프론트엔드",
+  "scripts": {
+    "start": "npx http-server . -p 3001 -o"
+  },
+  "keywords": ["todo", "bootstrap", "frontend"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
+
