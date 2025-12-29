@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <script>
+        function changecolor1(){
+            document.bgColor = 'red';
+            document.fgColor = 'black';
+        }
+        function changecolor2(){
+            document.bgColor = 'white';
+        }
+    </script>
+</head>
+<body> 
+    <!-- disabled 비활성화 시키기 -->
+    <form action="process_test.php" method="post">
+        <textarea name = 'content' rows = '10' cols = '40' disabled> 이름, 키, 몸무게를 쓰는 것에 대해서 동의 하시나요? </textarea>
+        <input type= "date" name = 's_date'>
+        <input type= "time" name = 's_date2'>
+    </form>
+
+
+<form action="process_test.php" method="post">
+    이름: <input type="text" name="uname" required><br>
+    키(cm): <input type="number" name="height" required><br>
+    몸무게(kg): <input type="number" name="weight" required><br>
+    <input type="submit" value="확인">
+    <input type="image" src = "./cloud.gif" width="50">
+
+        Age: <input type = 'number' name = 'age'>
+
+        만족도: <input type = 'range' name = 'score' min = '0' max = '5' step = '0.5'><br>
+
+        <input type = 'checkbox' name = 'c1' value= "music" checked>음악감상<br>
+        <input type = 'checkbox' name = 'c2' value= "movie" >영화감상<br>
+        <input type = 'checkbox' name = 'c3' value= "game" >게임<br>
+        
+        <input type = 'radio' name = 'r1' value= "music" >음악감상<br>
+        <input type = 'radio' name = 'r1' value= "movie">영화감상<br>
+        <input type = 'radio' name = 'r1' value= "game">게임<br>
+
+        <input type="button" value="red=" onclick="changecolor1()">
+        <input type="button" value="색상 초기화=" onmousemove="changecolor2()">
+        <input type="reset" value="초기화">
+
+        <input type= "submit" value="회원가입">
+    </form>
+</body>
+</html>
