@@ -1,34 +1,19 @@
 <html>
     <head>
-        <title>PHP TEST</title>
+        <title>구구단dd</title>
     </head>
     <body>
     
         <?php
-        //$payment = 3000;
-        //$price = 800;
-        //$num = 3;
-
-        //$change = $money - ($price * $num);
-
-        //echo "Unit Price: $price <br>";
-        //echo "Payment: $money <br>";
-        //echo "Change: $change<br>";
-
-        $weight = 60;
-        $height = 170;
-
-        $result = ($height - 100) * 0.9;
-
-        if($weight > $result){
-            echo("다이어트");
-        }else{
-            echo("노 필요");
+for ($a = 2; $a <= 9; $a += 3) {
+    for ($i = 1; $i <= 9; $i++) {
+        for ($j = $a; $j <= $a + 2 && $j <= 9; $j++) {
+            echo "$j X $i = " . ($j * $i) . "&nbsp;&nbsp;&nbsp;&nbsp;";
         }
-
+        echo "<br>";
+    }
+    echo "<br><br>";
+}
         ?>
-
-
-
     </body>
 </html>
