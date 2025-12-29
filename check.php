@@ -1,7 +1,7 @@
 <?php
 $correct_name = "진세은";
 $correct_nick = "진세";
-$correct_pw   = "002468";
+$correct_pw   = "002486";
 
 $uname     = $_POST['uname'] ?? '';
 $nickname  = $_POST['nickname'] ?? '';
