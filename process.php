@@ -18,6 +18,8 @@
     echo "<img src = '$imagepath'>"; //<img src =  
 
     
+
+    
     // $_FILES['userfile']['name'] //업로드 파일의 이름에 접근할 때
     // $_FILES['userfile']['tmp_name'] //업로드된 파일에 접근할 때
     // $_FILES['userfile']['size'] //업로드된 파일의 크기에 접근할 때

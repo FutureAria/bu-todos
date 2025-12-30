@@ -29,7 +29,7 @@
 <body style="background-color:#80d0d9;">
 
     <h1 id="top" style="text-align:center;">발전하는 주영 테스트 서버</h1>
-    <h5 style="text-align:center;">(네번째 시도)</h5>
+    <h5 style="text-align:center;">상호작용이 많이 될걸요? 마우스 올려보고 클릭해봐요 재미있어요 (네번째 시도)</h5>
 
     <form action="#" method="get" style="text-align:center;">
         <input type="search" name="q" placeholder="주영이에 대한 것을 검색"
@@ -37,12 +37,24 @@
         <button type="submit">검색</button>
     </form>
 
-    <p style="text-align:center;">
-        <a href='./input1229.html'><img src="mess.gif"width= "50" title="메시지"></a>
-        <a href="./picture.html"><img src="my pic.gif" width="50" title="추억 사진 "></a>
-        <a href="#"><img src="call.gif" width="50" title="핸드폰" title="전화번호"></a>
+<p style="text-align:center;">
+    <img src="msee_static.tiff" width="50" title="메시지" style="cursor:pointer;"
+        onmouseover="this.src='mess.gif'"
+        onmouseout="this.src='msee_static.tiff'"
+        onclick="location.href='./input1229.html'">
+    <img src="mypic.tiff" width="50" title="추억 사진" style="cursor:pointer;"
+        onmouseover="this.src='mypic.gif'"
+        onmouseout="this.src='mypic.tiff'"
+        onclick="location.href='./picture.html'">
+        <img src="call.tiff" width="50" title="전화 번호" style="cursor:pointer;"
+        onmouseover="this.src='call.gif'"
+        onmouseout="this.src='call.tiff'"
+        onclick="location.href='##'">
         <a href="#"><img src="my.jpg.jpeg" width="50" height="50" title="내 사진"></a>
-        <a href="input1111.html"><img src="se.gif" width="50" title="비밀 추억"></a>
+    <img src="Secret Code.tiff" width="50" title="비밀 추억" style="cursor:pointer;"
+        onmouseover="this.src='Secret Code.gif'"
+        onmouseout="this.src='Secret Code.tiff'"
+        onclick="location.href='input1111.html'">
     </p>
 
     <h3 style="text-align:center;">주영 사진</h3>
@@ -68,8 +80,12 @@
             allowfullscreen></iframe>
     </p>
 
+    
     <p style="text-align:center;">
-        <a href="#top"><img src="./home.gif"></a>
+    <img src="home.tiff" width="50" title="올라갈게요!" style="cursor:pointer;"
+        onmouseover="this.src='home.gif'"
+        onmouseout="this.src='home.tiff'"
+        onclick="location.href='#top'">
     </p>
 
 </body>

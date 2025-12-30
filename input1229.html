@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>회원가입</title>
+    <title>사진 기부</title>
     <script>
         function changecolor1(){
             document.bgColor = 'red';
@@ -17,18 +17,26 @@
 <body>
     <!-- disabled 비활성화 시키기 -->
     <form action="process_test.php" method="post">
-        <textarea name = 'content' rows = '10' cols = '40' disabled> 귀엽고 이쁜 고양이 사진 받습니다 </textarea>
+        <textarea name = 'content' rows = '10' cols = '40' disabled> 
+    귀엽고 이쁜 고양이 사진 받습니다...
+    개인 사진도 되긴 하는데 고양이 사진 위주로 주세요 ㅎㅎ; 
+    
+    돌아가는 길은 집 모양 눌러주세요!
+        </textarea>
         <input type= "date" name = 's_date'>
         <input type= "time" name = 's_date2'>
     </form>
 
-        <!-- <input type="button" value="red=" onclick="changecolor1()">
-        <input type="button" value="색상 초기화=" onmousemove="changecolor2()">
-        <input type="reset" value="초기화"> -->
-
         <form action="process.php" enctype="multipart/form-data" method = "post">
         <input type="file" name = 'image'>
         <input type="submit" value = "전송 ">
+
+    <p style="text-align:center;">
+    <img src="home.tiff" width="50" title="돌아가는 길" style="cursor:pointer;"
+        onmouseover="this.src='home.gif'"
+        onmouseout="this.src='home.tiff'"
+        onclick="location.href='./juyoung.html'">
+
     </form>
 
 </body>
