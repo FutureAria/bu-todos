@@ -17,7 +17,7 @@
     echo "첨부파일: $file_name ($result_size bytes)<br>";
     echo "<img src = '$imagepath'>"; //<img src =  
 
-    
+    echo("감사합니다!!")
 
     
     // $_FILES['userfile']['name'] //업로드 파일의 이름에 접근할 때
